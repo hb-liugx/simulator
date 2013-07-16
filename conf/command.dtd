@@ -1,0 +1,23 @@
+<!ELEMENT command (output, parameters?)>
+<!ELEMENT output (successful, failed)>
+<!ELEMENT parameters (parameter+)>
+<!ELEMENT successful (#PCDATA)>
+<!ELEMENT failed (#PCDATA)>
+<!ELEMENT parameter EMPTY>
+<!ATTLIST command name CDATA #REQUIRED
+                  description CDATA #REQUIRED
+                  endpoint CDATA #REQUIRED
+                  method (GET | SET | PUT | DELETE | POST ) "GET"
+                  persistence (true | false) "false"
+                  storageName CDATA ""
+                  class CDATA "">
+<!ATTLIST successful type (text | file | json ) "json"
+                     httpcode CDATA "200"
+                     class CDATA "">
+<!ATTLIST failed type (text | file  | json ) "json"
+                 httpcode CDATA "401">
+<!ATTLIST parameter name CDATA #REQUIRED
+                    objectName CDATA #REQUIRED
+                    isKey (true | false) "false"
+                    comparable (true | false) "false"   
+                    sessional (true | false) "false">

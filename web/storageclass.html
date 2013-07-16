@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)file:///F:/All%20project/PEAXY/kendoui.trial.2012.3.1315/examples/dataviz/bubble-charts/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Basic usage</title>
+	<style type="text/css">
+</style>
+    <link href="css/kendo.default.min.css" rel="stylesheet">
+	<link href="css/kendo.common.min.css" type="text/css" rel="stylesheet">
+    <!-- <link href="css/kendo.default.min.css" type="text/css" rel="stylesheet"> -->
+	<link href="css/kendo.peaxy.min.css" type="text/css" rel="stylesheet">
+	<link href="css/peaxy.style.css" type="text/css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.web.min.js"></script>
+	<script src="js/kendo.all.min.js" type="text/javascript"></script>
+	<script src="js/peaxy.storageclass.js"></script>
+	<script src="js/peaxy.util.js" type="text/javascript"></script>
+	
+
+</head>
+<body>
+<div id="storageclass" style="float: left;"></div>
+<button type="button" id = "btn1">create</button>
+<button type="button" id = "btn2">edit</button>
+
+</body>
+<script>
+
+var storageclassData = {
+	status:true,
+	basedOnValue:"1",
+	titleClassName:"",
+	className: "",
+	radioValue:"0",
+	usableSpace:"0",
+	rawSpace:"0",
+	allocationValue:"Yes",
+	defaultValue:"No",
+	performanceLevel:'0'
+};
+storageclass = new peaxy.StorageClass({
+	parent:$("#storageclass"),
+	onChange : function(view){
+		//alert(view.basedOnValue);
+	}
+});
+//storageclass.editMode();
+storageclass.editMode(storageclassData);
+
+storageclass.draw();
+$('#btn1').click(function(){
+	storageclass.createMode(storageclassData);
+	storageclass.setData();
+});
+$('#btn2').click(function(){
+	storageclass.editMode(storageclassData);
+});
+      
+</script>
+
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Updates a user password." name="update user password" method="POST" 
+         endpoint="aaa/user/updatepwd" persistence="true" storageName="user" class="">
+    <output>
+        <successful type="text">Success</successful>
+        <failed type="text">failure</failed>
+    </output>
+    <parameters>
+        <parameter isKey="true" name="name"/>
+        <parameter name="oldpassword"/>
+        <parameter name="newpassword"/>
+    </parameters>
+</command>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Gets the process service state." name="get state of a defined process" 
+         method="GET" endpoint="peaxy/oob/state/get" persistence="false" storageName="" class="">
+    <output>
+        <successful type="text">true</successful>
+        <failed type="text">false</failed>
+    </output>
+</command>

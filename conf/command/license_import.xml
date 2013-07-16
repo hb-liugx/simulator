@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Import a peaxy management tool license" name="import license" 
+         method="POST" endpoint="license/import" persistence="true" storageName="license" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandImportLicense">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+	<parameters>
+		<parameter name="licensefile"/>
+	</parameters>
+</command>

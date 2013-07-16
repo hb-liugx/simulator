@@ -1,0 +1,82 @@
+.cardview{
+	background: #EEEEEE;
+/*	border:solid 2px red;*/
+}
+.cardview .detailview{
+	width:608px;
+	margin-left:30px;
+	/*border:solid 2px #A1A9AC;*/
+	
+}
+.cardview .detailview table{
+
+	width:608px;
+}
+.cardview .detailview table td{
+	color:#24303F;
+	height:30px;
+	text-align:left;
+}
+.cardview .detailview .r1t1{
+	font-size: 18px;
+}
+.cardview .detailview .r1t2{
+	text-align:right;
+}
+.cardview .detailview .r2t1{
+	font-size: 48px;
+	width:12%;
+	vertical-align:bottom;
+}
+.cardview .detailview .r2t3{
+	font-size: 12px;
+	color:#7A8082;
+}
+.cardview .detailview .r2t5{
+	width:10%;
+}
+.cardview .detailview .r2t6{
+	font-size: 12px;
+	width:26%;
+	color:#7A8082;
+}
+.cardview .detailview .r3t2{
+	font-size: 14px;
+	width:10%;
+	vertical-align:bottom;
+}
+.cardview .detailview .r3t3{
+	font-size: 22px;
+	width:8%;
+	vertical-align:bottom;
+}
+.cardview .detailview .r3t5{
+	font-size: 22px;
+	vertical-align:bottom;
+}
+.cardview .detailview .r4{
+	font-size: 8px;
+	color:#A1A9AC;
+}
+.cardview .detailview .r5{
+	height:10px;
+}
+.cardview .listview{
+	margin-left:30px;
+	margin-top:10px;
+    width:635px;
+	height:440px;
+	/*border:solid 2px #000000;*/
+	overflow:auto;
+	position: absolute;
+	
+	/*
+    border-radius: 8px 8px 8px 8px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1) inset;
+    float: left;
+    margin: 5px;
+    padding: 3px;
+    width: 320px;
+	*/
+}

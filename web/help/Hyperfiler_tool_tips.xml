@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<help>
+  <configuration>
+    <initialsetup>
+      <login>
+        <createinitialaccount>
+          <email>
+            <des>The superuser email account must be a valid email address and less than 64 characters.
+             </des>
+          </email>
+          <username>
+            <des>Must be from 3 to 32 characters. Valid characters are letters (a-z, A-Z), numbers, periods (.) and at signs  (@) alphanumeric characters.
+              </des>
+          </username>
+          <password>
+            <des>Must be a minimum of 8 characters and include at least one capital letter, one lower case letter, and one number.  Passwords are case sensitive.
+          </des>
+          </password>
+        </createinitialaccount>
+        <userlogin>
+          <des>Enter a valid user name and password to log in. After three failed attempts your account will be temporarily locked.</des>
+        </userlogin>
+      </login>
+    </initialsetup>
+    <accountsettings>
+      <accountinformation>
+        <name>
+          <des> Your full name.</des>
+        </name>
+        <username>
+          <des>The username used to log into the system.</des>
+        </username>
+        <password>
+          <des>The password associated with the user name.</des>
+        </password>
+      </accountinformation>
+      <systemsettings>
+        <timezone>
+          <des>Select the timezone that the system uses from the drop-down menu.
+      </des>
+        </timezone>
+      </systemsettings>
+      <contactsettings>
+        <email>
+          <des>The email addresses to which notifications are sent. Click the plus sign (+) to add more email addresses. To remove an email, click the minus sign (-) to the right of the emailaddress.
+    </des>
+        </email>
+      </contactsettings>
+    </accountsettings>
+    <generalsettings>
+      <name>
+        <des>Hyperfiler names can be up to 14 alphanumeric characters and can contain dots (.), dashes (-), underscores (_) and carets (^).
+        </des>
+      </name>      
+      <basedon>
+        <des>To base the Hyperfiler on an existing configuration template, select the template from the drop-down menu.
+        </des>
+      </basedon>
+      <encryption>
+        <des>Enable the encryption feature to ensure that data sent on the wire is encrypted, preventing unauthorized persons from seeing the data. For more information about encryption on the wire, visit the <a href="http://www.peaxy.net">Web site.</a>
+		    </des>
+      </encryption>
+      <namespace>
+       <averagefilesize>
+          <des>Select the average size of the files that will be assigned to the hyperfiler. The selection here is used by the system to determine the correct ratio of namespace hyperservers to dataspace hyperservers.
+          </des>
+        </averagefilesize>
+        <namedataratio>
+          <des>Namespace and data are stored on separate hyperservers. This separation provides better performance.
+          </des>
+        </namedataratio>
+         <replicationfactor>
+          <des>Set the number of replicas for this storage class. Setting this to 0 indicates that only the original data is saved. Setting the replication factor to 2 indicates that the original and two replicas of the data are saved, providing higher availability.
+         </des>
+       </replicationfactor>
+      </namespace>
+    </generalsettings>
+    <storageclasses>
+      <des>A storage class is the combination of settings that is applied to a group of data hyperservers within the Hyperfiler. When additional storage for a Storage Class is needed, a new hyperserver is created that inherits the properties of the Storage Class. You can create as many storage classes as your system requires.
+		 </des>
+      <basedon>
+        <des>To use an existing Storage Class as a template to create a new one, select the storage class to use from the pulldown list.
+      </des>
+      </basedon>
+      <classname>
+        <des>The class name (storage class name) should be something that lets you know the type of files that will be assigned to this storage class. 
+      </des>
+      </classname>
+      <cloudstorage>
+        <des>Set to Yes if the storage is in a public or private cloud. If the storage is local hardware, set this to no.
+      </des>
+      </cloudstorage>
+      <drivetype>
+        <des>Specify the type of drives that the storage class will use. All files assigned to this storage class will be stored on the drive type you select. Select the desired type from the drop-down list.
+      </des>
+      </drivetype>
+      <usablestoragespace>
+        <des>Set a limit on how much capacity this storage class can consume.
+      </des>
+      </usablestoragespace>
+         <defaultstorageclass>
+        <dedicatedstoragespace>
+          <des>These settings show you how much space is in the system and how much of that space is usable. </des>
+          <des>Use this information if you want to set a hard limit on how much space the class members can consume.
+        	</des>
+        </dedicatedstoragespace>
+        <flexiblestoragespaceallocation>
+          <des>Enable this feature if you want the amount of storage consumed by class members to adjust automatically as more space is needed. By allowing flexible allocation, you will not need to manually adjust the limits every time the limit is reached. However, you must ensure that there is enough space for all classes.
+			  </des>
+        </flexiblestoragespaceallocation>
+        <performancelevel>
+          <des>Select the level of performance required by members of this storage class.
+				</des>
+        </performancelevel>
+        <des>Set to Yes if you want to make this the default storage class used when creating hyperservers.
+			</des>
+      </defaultstorageclass>
+    </storageclasses>
+    <datamanagementpolicies>
+      <basedon>
+        <des>If the policy is to be based on an existing data management policy, select the policy to use as the template.
+    </des>
+      </basedon>
+      <policyname>
+        <des>Provide a name for the policy. Names should indicate what the  policy is used for.
+    </des>
+      </policyname>
+      <policytype>
+        <des>Select the type of data management type. Further options are based on this selection.
+    </des>
+      </policytype>
+      <dataassignment>
+        <des>Define the conditions to assign to data in this policy. For example, specify that all files with the .doc extension be stored in a specified drive.
+    </des>
+      </dataassignment>
+      <assigndatato>
+        <des>Assign data with this policy to a specific storage class. 
+   </des>
+      </assigndatato>
+      <iffull>
+        <des>Specify what the system should do if the specified assignment points to a storage class that has reached capacity limits. 
+   </des>
+      </iffull>
+      <storeon>
+        <des>Select an alternate storage class to use if the assigned storage class is full.
+   </des>
+      </storeon>
+      <conditionals>
+        <des>Add conditional rules based on if/then statements.
+   </des>
+      </conditionals>
+     <editconditionals>
+     <des>Use the drop-down menus to create any number of additional conditions for the policy. All conditionals are if/then statements.
+     </des></editconditionals> 
+    </datamanagementpolicies>
+    <advancedsettings>
+    
+    </advancedsettings>
+    <log>
+      <installFailed>
+        <des>The Hyperfiler installation failed due to the error shown below. If you need more information to help correct this issue, see the Troubleshooting page on the Peaxy web site.</des>
+      </installFailed>
+    </log>
+  </configuration>
+</help>

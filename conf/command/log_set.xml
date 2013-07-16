@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Creates or updates the existing logging configuration." name="set log configuration" 
+         method="PUT" endpoint="peaxy/conf/log/set" persistence="true" storageName="conf_log" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandLog">
+	<output>
+		<successful type="json">successful</successful>
+		<failed type="text">failed</failed>
+	</output>
+	<parameters>
+		<parameter name="includes" objectName="filter_list"/>
+		<parameter name="enable_syslog" objectName="filter_list"/>
+		<parameter name="level" objectName="filter_list"/>
+        <parameter name="port"/>
+        <parameter name="log_server"/>
+	</parameters>
+</command>

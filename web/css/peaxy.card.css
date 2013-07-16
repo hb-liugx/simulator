@@ -1,0 +1,483 @@
+.card{
+	background: -moz-linear-gradient(315deg, transparent 5px, #FFFFFF 5px);
+	background: -webkit-linear-gradient(135deg, transparent 10px, #FFFFFF 5px);
+	background: -ms-linear-gradient(315deg, transparent 5px, #FFFFFF 5px);
+	background: -o-linear-gradient(315deg, transparent 5px, #FFFFFF 5px);
+	background: linear-gradient(315deg, transparent 10px, #FFFFFF 5px);
+}
+
+.preview{
+	float: left;
+	margin-right:10px;
+	margin-top:10px;
+	background: -moz-linear-gradient(315deg, transparent 5px, #A1A9AC 5px);
+	background: -webkit-linear-gradient(135deg, transparent 10px, #A1A9AC 5px);
+	background: -ms-linear-gradient(315deg, transparent 5px, #A1A9AC 5px);
+	background: -o-linear-gradient(315deg, transparent 5px, #A1A9AC 5px);
+	background: linear-gradient(315deg, transparent 10px, #A1A9AC 5px);
+	cursor: pointer;
+}
+.v2{
+	position: absolute;
+	background: #000000;
+	opacity: 0.4;
+	filter: alpha(opacity:40);
+	display: none;
+	z-index: 9;
+	width: 100%;
+	height: 100%;
+	cursor: default;
+}
+.mask {
+	background: #000000;
+	position: ralative;
+	z-index: 9;
+	opacity: 0.4;
+	filter: alpha(opacity:40);
+	top: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.masking {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
+
+/* Class Card*/
+.classCard{
+	float: left;
+	margin-top:10px;
+	margin-right:10px;
+	cursor: pointer;
+}
+
+.classCard .status-finished{
+	height:5px;
+	background: #24303F;
+}
+.classCard .status-creation{
+	height:5px;
+	background: #A1A9AC;
+}
+
+.classCard .status-preview{
+	height:5px;
+	background: #A1A9AC;
+}
+
+.classCard .header-finished{
+	width:100%;
+	height:32px;
+	background: #24303F;
+}
+.classCard .header-preview{
+	width:100%;
+	height:32px;
+	background: #A1A9AC;
+}
+.classCard .header-creation{
+	width:100%;
+	height:32px;
+	background: #A1A9AC;
+}
+.classCard .header-font{
+	color: #FFFFFF;
+	margin-left:5px;
+	font-size: 18px;
+}
+.classCard .toolbar-finished{
+	height:20px;
+	margin-top:0px;
+	background: #24303F;
+}
+.classCard .toolbar-preview{
+	height:20px;
+	margin-top:0px;
+	background: #A1A9AC;
+}
+.classCard .toolbar-creation{
+	height:20px;
+	margin-top:0px;
+	background: #A1A9AC;
+}
+.classCard .toolbar-font{
+	color: #7A8082;
+	margin-left:5px;
+	font-size: 12px;
+}
+.classCard .content{
+	width:90%;
+	margin-left:10px;
+}
+
+.classCard .content-preview{
+	width:90%;
+	height:200px;
+	margin-left:10px;
+	background: #A1A9AC;
+}
+
+/* table */
+.classCard .content table {
+	margin-top:10px;
+	width:100%;
+}
+
+.classCard .content table td {
+	color:#334F5F;
+	font-size: 10px;
+	height:30px;
+	text-align:left;
+	vertical-align: bottom;
+}
+
+.classCard .content .r1t2{
+	width:20%;
+	color: #24303F;
+	font-size: 30px;
+	text-align:center;
+	vertical-align:bottom;
+}
+.classCard .content .r2{
+	height:10px;
+}
+.classCard .content .r1t3{
+	width:5%;
+	color: #24303F;
+	font-size: 12px;
+	text-align:center;
+	vertical-align:bottom;
+
+}
+
+.classCard .content .r3t2{
+	width:5%;
+	font-size: 22px;
+	vertical-align:bottom;
+	text-align:center;
+	border-bottom:#85959F solid 1px; 
+}
+.classCard .content .r3t3{
+	width:5%;
+	font-size: 12px;
+	vertical-align:bottom;
+	border-bottom:#85959F solid 1px; 
+}
+
+.classCard .content .r5{
+	font-size: 8px;
+	color: #A1A9AC;
+	height:20px;
+}
+
+.classCard .content .r7t3{
+	width:5%;
+	font-size: 22px;
+	vertical-align:bottom;
+	text-align:right;
+	border-bottom:#85959F solid 1px; 
+}
+
+.classCard .content .underline1{
+	border-bottom:#002337 solid 2px; 
+}
+
+.classCard .content .underline2{
+	border-bottom:#85959F solid 1px; 
+}
+
+
+/* Namespace Card */
+.namespaceCard{
+	float: left;
+	margin-top:10px;
+	margin-right:10px;
+	cursor: default;
+}
+
+.namespaceCard .status{
+	height:5px;
+	background: #D5D1C3;
+}
+
+.namespaceCard .header{
+	width:100%;
+	height:32px;
+	background: #D5D1C3;
+}
+.namespaceCard .header-font{
+	color: #24303F;
+	margin-left:5px;
+	font-size: 18px;
+}
+.namespaceCard .toolbar{
+	height:20px;
+	margin-top:0px;
+	background: #D5D1C3;
+}
+
+.namespaceCard .content{
+	width:90%;
+	margin-left:10px;
+}
+
+/* table */
+.namespaceCard .content table {
+	margin-top:10px;
+	width:100%;
+}
+
+.namespaceCard .content table td {
+	color:#6B6962;
+	font-size: 10px;
+	height:25px;
+	text-align:left;
+	vertical-align:middle;
+	border-bottom:#D5D1C3 solid 1px; 
+}
+
+.namespaceCard .content .r1t2{
+	width:5%;
+	font-size: 18px;
+	text-align:right;
+	vertical-align:bottom;
+}
+
+.cardStatus{
+	height:6px;
+	background: #9FAA4C;
+}
+.card_header{
+	height:40px;
+	background: #24303F;
+}
+.card_header:hover{
+	height:40px;
+	background: #1D2632
+}
+.card_toolbar{
+	height:40px;
+	line-height:40px;
+	background: #24303F;
+}
+.card_title_header{
+	color:#FFFFFF;
+	height:40px;
+	margin-left:10px;
+	line-height:40px;
+	font-size: 26px;
+}
+.card_title_toolbar{
+	color:#FFFFFF;
+	height:40px;
+	font-size: 14px;
+}
+.namespace_header{
+	height:40px;
+	background: #D5D1C3;
+}
+.namespace_toolbar{
+	height:40px;
+	line-height:40px;
+	background: #D5D1C3;
+}
+.namespace_title_header{
+	color:#24303F;
+	height:40px;
+	margin-left:10px;
+	line-height:40px;
+	font-size: 26px;
+}
+.n-title1,.n-title2,.n-title3,.n-title4{
+	vertical-align:bottom;
+}
+.n-title1{
+	font-size: 40px;
+	color:#504F4A;
+}
+.n-title2{
+	font-size: 14px;
+	color:#002337;
+}
+.n-title3{
+	font-size: 12px;
+	color:#6B6962;
+}
+.n-title4{
+	font-size: 22px;
+	color:#6B6962;
+}
+.c-title1,.c-title2,.c-title3,.c-title4{
+	vertical-align:bottom;
+}
+.c-title1{
+	font-size: 40px;
+	color:#002337;
+}
+.c-title2{
+	font-size: 14px;
+	color:#002337;
+}
+.c-title3{
+	font-size: 12px;
+	color:#334F5F;
+}
+.c-title4{
+	font-size: 22px;
+	color:#334F5F;
+}
+.p-title1,.c-title2{
+	font-size: 16px;
+	vertical-align:bottom;
+}
+.p-title1{
+	color:#504F4A;
+}
+.p-title2{
+	color:#FFFFFF;
+}
+.c-notification1,.c-notification2,.c-notification3,.c-notification4{
+	font-size: 22px;
+}
+.c-notification1{
+	color:#830A54;
+}
+.c-notification2{
+	color:#F3354B;
+}
+.c-notification3{
+	color:#F1A800;
+}
+.c-notification4{
+	color:#00A2DF;
+}
+
+.card_default_tb{
+	width:5px;
+	height:25px;
+	vertical-align:bottom;
+}
+.card_default_tool_td{
+	text-align:center;
+	height:20px;
+	width:25%;
+}
+.card_default_value{
+	height:25px;
+	text-align:right;
+	vertical-align:bottom;
+}
+
+.class_default_tb{
+	width:5px;
+	height:20px;
+	vertical-align:bottom;
+}
+.class_default_tool_td{
+	text-align:center;
+	height:20px;
+	width:25%;
+}
+.class_default_value{
+	height:20px;
+	text-align:right;
+	vertical-align:bottom;
+}
+
+.namespace_default_tb{
+	width:5px;
+	height:30px;
+	vertical-align:bottom;
+}
+
+.namespace_default_value{
+	height:30px;
+	text-align:right;
+	vertical-align:bottom;
+}
+.hyperserver_default_tb{
+	width:5px;
+	height:30px;
+	vertical-align:bottom;
+}
+
+.hyperserver_default_value{
+	height:30px;
+	text-align:right;
+	vertical-align:bottom;
+}
+.hyperserver_header_noissues{
+	height:40px;
+	background: #9FAA4C;
+}
+.hyperserver_header_noissues:hover{
+	height:40px;
+	background: #909A45;
+}
+.hyperserver_header_degraded{
+	height:40px;
+	background: #F1A800;
+}
+.hyperserver_header_degraded:hover{
+	height:40px;
+	background: #D99800;
+}
+.hyperserver_header_critical{
+	height:40px;
+	background: #F3354B;
+}
+.hyperserver_header_critical:hover{
+	height:40px;
+	background: #DB3044;
+}
+.hyperserver_header_failed{
+	height:40px;
+	background: #830A54;
+}
+.hyperserver_header_failed:hover{
+	height:40px;
+	background: #770A4C;
+}
+.hyperserver_header{
+	height:40px;
+	background: #F3354B;
+}
+.hyperserver_namespace_toolbar{
+	height:40px;
+	line-height:40px;
+	background: #DEDBD0;
+}
+.hyperserver_toolbar{
+	height:40px;
+	background: #24303F;
+}
+.hyperserver_title_header{
+	color:#FFFFFF;
+	height:40px;
+	margin-left:10px;
+	line-height:40px;
+	font-size: 16px;
+}
+
+.card_underline1{
+	border-bottom:#24303F solid 2px; 
+}
+
+.card_underline2{
+	border-bottom:#85959F solid 1px; 
+}
+
+.namespace_underline1{
+	border-bottom:#504F4A solid 2px; 
+}
+
+.namespace_underline2{
+	border-bottom:#D5D1C3 solid 1px; 
+}
+
+.namespace_underline3{
+	border-bottom:#24303F solid 2px; 
+}

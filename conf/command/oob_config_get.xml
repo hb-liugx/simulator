@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Gets the configuration settings." name="get hyperserver configuration" 
+         method="GET" endpoint="peaxy/oob/config/get" persistence="false" storageName="oob_config" class="">
+    <output>
+        <successful type="text">true</successful>
+        <failed type="text">false</failed>
+    </output>
+</command>

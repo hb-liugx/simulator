@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resource [
+	<!ENTITY key.a "0x41">
+	<!ENTITY key.b "0x42">
+	<!ENTITY key.c "0x43">
+	<!ENTITY key.d "0x44">
+	<!ENTITY key.e "0x45">
+	<!ENTITY key.f "0x46">
+	<!ENTITY key.g "0x47">
+	<!ENTITY key.h "0x48">
+	<!ENTITY key.i "0x49">
+	<!ENTITY key.j "0x4a">
+	<!ENTITY key.k "0x4b">
+	<!ENTITY key.l "0x4c">
+	<!ENTITY key.m "0x4d">
+	<!ENTITY key.n "0x4e">
+	<!ENTITY key.o "0x4f">
+	<!ENTITY key.p "0x50">
+	<!ENTITY key.q "0x51">
+	<!ENTITY key.r "0x52">
+	<!ENTITY key.s "0x53">
+	<!ENTITY key.t "0x54">
+	<!ENTITY key.u "0x55">
+	<!ENTITY key.v "0x56">
+	<!ENTITY key.w "0x57">
+	<!ENTITY key.x "0x58">
+	<!ENTITY key.y "0x59">
+	<!ENTITY key.z "0x5a">
+	<!ENTITY key.f11 "0x7a">
+	<!ENTITY key.del "0x7f">
+	<!ENTITY key.shift "0x01">
+	<!ENTITY key.ctrl "0x02">
+	<!ENTITY key.alt "0x08">
+	<!ELEMENT resource (menu)+>
+	<!ELEMENT menu ((menu*) | (item*) | (separator*))+>
+	<!ELEMENT item EMPTY>
+	<!ELEMENT separator EMPTY>
+	<!ATTLIST menu
+		name ID #REQUIRED
+		text CDATA #REQUIRED
+		tip CDATA "Ready"
+		mnemonic CDATA "-1"
+		icon CDATA ""
+		enabled (true | fasle) "true"
+		visible (true | false) "true"
+	>
+	<!ATTLIST item
+		name ID #REQUIRED
+		text CDATA #REQUIRED
+		tip CDATA "Ready"
+		mnemonic CDATA "-1"
+		accelerator CDATA ""
+		icon CDATA ""
+		enabled (true | fasle) "true"
+		visible (true | false) "true"
+	>
+]>
+<resource>
+	<menu name="file" text="File" mnemonic="&key.f;">
+		<menu name="new" text="New" tip="Create a new API, Device or Event" mnemonic="&key.n;" icon="new.ico">
+			<item name="api" text="RESTful API..." tip="Create a new RESTful API" mnemonic="&key.c;" accelerator="&key.c;+&key.alt;|&key.shift;"/>
+			<item name="device" text="Device..." tip="Create a new Device" mnemonic="&key.d;" accelerator="&key.d;+&key.alt;|&key.shift;"/>
+			<item name="event" text="Event Notification..." tip="Create a new Event Notification" mnemonic="&key.v;" accelerator="&key.v;+&key.alt;|&key.shift;"/>
+		</menu>
+		<item name="open" text="Open File..." tip="Open a file" mnemonic="&key.o;" icon="open.ico"/>
+		<separator/>
+		<item name="save" text="Save" tip="Save changed" mnemonic="&key.s;" accelerator="&key.s;+&key.ctrl;" icon="save.ico"/>
+		<item name="saveas" text="Save As..." tip="Save changed" mnemonic="&key.a;"/>
+		<item name="saveall" text="Save All" tip="Save changed" mnemonic="&key.e;" accelerator="&key.s;+&key.ctrl;|&key.shift;"/>
+		<separator/>
+		<item name="print" text="Print..." tip="Print something" mnemonic="&key.p;" accelerator="&key.p;+&key.ctrl;" icon="print.ico"/>
+		<separator/>
+		<item name="start" text="Start to Simulate                " tip="Start to simulate" mnemonic="&key.t;" accelerator="&key.f11;+&key.ctrl;" icon="run.ico"/>
+		<item name="stop" text="Stop Simulating" tip="Stop Simulating" mnemonic="&key.i;"/>
+		<separator/>
+		<item name="configuration" text="Configuration" tip="Configure this system" mnemonic="&key.c;"/>
+		<separator/>
+		<item name="exit" text="Exit" tip="To leave this system" mnemonic="&key.x;" icon="exit.gif"/>
+	</menu>
+	<menu name="edit" text="Edit" mnemonic="&key.e;">
+		<item name="cut" text="Cut" tip="Cut selected to clipboard" mnemonic="&key.t;" accelerator="&key.x;+&key.ctrl;" icon="cut.ico"/>
+		<item name="copy" text="Copy" tip="Copy selected to clipboard" mnemonic="&key.c;" accelerator="&key.c;+&key.ctrl;" icon="copy.ico"/>
+		<item name="paste" text="Paste" tip="Paste selected from clipboard" mnemonic="&key.p;" accelerator="&key.v;+&key.ctrl;" icon="paste.ico"/>
+		<separator/>
+		<item name="modify" text="Modify..." tip="Modify selected" mnemonic="&key.m;" accelerator="&key.m;+&key.alt;|&key.shift;"/>
+		<separator/>
+		<item name="delete" text="Delete" tip="Delete selected" mnemonic="&key.d;" accelerator="&key.del;+0" icon="delete.ico"/>
+		<separator/>
+		<item name="selectall" text="Select All" tip="Select all you want to select" mnemonic="&key.a;" accelerator="&key.a;+&key.ctrl;"/>
+		<separator/>
+		<item name="find" text="Find..." tip="Find what you want to find" mnemonic="&key.f;" accelerator="&key.f;+&key.ctrl;"/>
+		<item name="findnext" text="Find Next" tip="Find what next you want to find" mnemonic="&key.n;" accelerator="&key.k;+&key.ctrl;"/>
+		<item name="findprevious" text="Find Previous" tip="Find what previous you want to find" mnemonic="&key.v;" accelerator="&key.v;+&key.ctrl;"/>
+		<separator/>
+		<item name="collapse" text="Collapse" tip="Collapse" mnemonic="&key.o;"/>
+		<item name="expand" text="Expand" tip="Expand" mnemonic="&key.x;"/>
+		<separator/>
+		<item name="setencoding" text="Set Encoding...                " tip="Set encoding" mnemonic="&key.i;"/>
+	</menu>
+	<menu name="window" text="Window" mnemonic="&key.w;">
+		<item name="neweditor" text="New Editor" tip="Create a new editor" mnemonic="&key.n;"/>
+		<separator/>
+		<menu name="showview" text="Show View" tip="Show a console or an error log view" mnemonic="&key.v;">
+			<item name="console" text="Console" tip="Show the console window" mnemonic="&key.c;"/>
+			<item name="errorlog" text="Error Log                " tip="Show the error log window" mnemonic="&key.l;"/>
+		</menu>
+		<separator/>
+		<item name="restore" text="Restore" tip="Restore the window maximized" mnemonic="&key.r;"/>
+		<item name="maximize" text="Maximize" tip="Maximize current window" mnemonic="&key.m;"/>
+		<item name="close" text="Close" tip="Close current window" mnemonic="&key.o;"/>
+		<item name="closeothers" text="Close Others                " tip="Close all windows but current" mnemonic="&key.t;"/>
+		<item name="closeall" text="Close All" tip="Close all windows opened" mnemonic="&key.a;"/>
+		<separator/>
+		<item name="preferences" text="Preferences" tip="Setup preferences" mnemonic="&key.p;"/>
+	</menu>
+	<menu name="help" text="Help" mnemonic="&key.h;">
+		<item name="helpcontents" text="Help Contents" tip="Help Contents" mnemonic="&key.h;"/>
+		<separator/>
+		<item name="aboutpeaxysimulator" text="About Peaxy Simulator...                " tip="About Peaxy simulator" mnemonic="&key.a;"/>
+	</menu>
+</resource>

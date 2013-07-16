@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "./conf/command.dtd">
+
+<command description="Provides a way for users to log into the Hyperfiler administrator console." name="user login" 
+         method="POST" endpoint="/bootstrap/os_install/cancel_all" persistence="true" storageName="discover" 
+         class="">
+	<output>
+		<successful type="json" httpcode="200">Success</successful>
+		<failed type="text" httpcode="401">failure
+</failed>
+	</output>
+	<parameters>
+		<parameter isKey="true" comparable="true" sessional="true" name="name"/>
+		<parameter comparable="true" name="password"/>
+	</parameters>
+</command>

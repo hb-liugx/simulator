@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="If an NTP server will be used for this Hyperserver, sets the NTP servers and the time zone." name="set NTP configuration" 
+         method="POST" endpoint="peaxy/conf/ntp/set" persistence="true" storageName="conf_ntp" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandNTP">
+	<output>
+		<successful type="json">successful</successful>
+		<failed type="text">failed</failed>
+	</output>
+	<parameters>
+		<parameter name="server1"/>
+		<parameter name="server2"/>
+		<parameter name="server3"/>
+		<parameter name="time_zone"/>
+	</parameters>
+</command>

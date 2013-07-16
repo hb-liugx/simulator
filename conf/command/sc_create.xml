@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Creates a new storage class." name="storage class create" 
+         method="POST" endpoint="conf/sc/create" persistence="true" storageName="sc_conf" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandSC">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+	<parameters>
+		<parameter name="name"/>
+		<parameter name="description"/>
+		<parameter name="list"/>
+		<parameter name="cardinality"/>
+		<parameter name="capacity"/>
+		<parameter name="device_type"/>
+	</parameters>
+</command>

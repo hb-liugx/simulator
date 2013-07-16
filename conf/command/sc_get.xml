@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Returns a list of all Storage Classes configured within the Hyperfiler." name="get storage class" 
+         method="GET" endpoint="conf/sc/get" persistence="true" storageName="sc_conf" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandSC">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+</command>

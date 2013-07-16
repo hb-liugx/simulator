@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="get admin email" name="get admin email" 
+         method="GET" endpoint="aaa/adminaddress" persistence="false" storageName="admin_email" class="">
+    <output>
+        <successful type="text" key="email" class="">admin@peaxy.net</successful>
+        <failed type="text">failed</failed>
+    </output>
+</command>

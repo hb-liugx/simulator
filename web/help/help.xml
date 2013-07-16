@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<help>
+	<login>
+		<createinitialaccount>
+			<createsuperuser>
+			<des>When you set up a Hyperfiler, you create a super administrator account. The super administrator account lets you configure the Hyperfiler and create more administrator users. 
+			</des>
+			<des>Provide a user name, password, and email account for the super administrator.	Passwords should be at least 8 characters and should not contain spaces.	
+			</des>		
+		</createsuperuser>
+		<userlogin><des>Enter a valid user name and password to log in. After three failed attempts your account will be temporarily locked.</des>
+		</userlogin> 
+			<email>
+				<des>The email must be less then 64 characters in length.</des>
+			</email>
+			<username>
+				<des>Only letters [a-z, A-Z], numbers, periods and @ are valid characters.The username must be 3 to 32 characters in length.</des>
+			</username>
+			<password>
+				<des>The password must contain at least eight characters and include a minimum of one capital letter, one lowercase letter and a number digit.
+			</des>
+			</password>
+		</createinitialaccount>
+	</login>
+	
+	<configuration>
+		<generalsettings>
+			<basedon>
+				<des>The default setting is New Coniguration.drop-down menu offers the existing Hyperfilers in the system as models, and offers two                     more options:
+				</des>
+				<des>
+					 View all saved configs
+  			   </des>
+			   <des>
+					 Import Config. File
+			   </des>
+			</basedon>
+			
+			<abbreviation>
+				<des>For each Hyperfiler the user must enter an abbreviation.</des>
+			</abbreviation>
+			
+			<encryption>
+				<des>Here the user sets whether then want encryption on the wire for the Hyperfiler.'No' selected by default. <a href=  		"http://www.peaxy.com/help/xxx.html">here learn more.</a></des>
+				<des></des>
+			</encryption>
+		</generalsettings>
+		
+		<storageclass>
+			<des></des>
+			<basedon>
+				<des></des>
+				<des></des>
+			</basedon>
+			<cloudstorage>
+				<des></des>
+			</cloudstorage>
+			<drivetype>
+				<des></des>
+			</drivetype>
+			<usablestoragespace>
+				<des></des>
+				<des></des>
+			</usablestoragespace>
+		</storageclass>
+	</configuration>
+	
+	
+	<license>
+		<licensereviewinfo>
+			<licensetype>
+				<des>Tooltip info for license type, to be entered.</des>
+			</licensetype>
+			<dataspace>
+				<des>Tooltip info for data space capacity level, to be entered.</des>
+			</dataspace>
+			<supportlevel>
+				<des>Tooltip info for support level, to be entered.</des>
+			</supportlevel>
+			<additionalfeatures>
+				<des>Tooltip info for additional features, to be entered.</des>
+			</additionalfeatures>
+		</licensereviewinfo>
+	</license>
+</help>

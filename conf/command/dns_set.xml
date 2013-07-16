@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Sets the DNS configuration for the Hyperfiler." name="set DNS configuration" 
+         method="POST" endpoint="peaxy/conf/dns/set" persistence="true" storageName="conf_dns" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandDNS">
+	<output>
+		<successful type="text">successful</successful>
+		<failed type="text">failed</failed>
+	</output>
+	<parameters>
+		<parameter name="domain"/>
+		<parameter name="srv1"/>
+		<parameter name="srv2"/>
+		<parameter name="srv3"/>
+	</parameters>
+</command>

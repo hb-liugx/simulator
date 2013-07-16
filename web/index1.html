@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<link href="/css/treeview.css" type="text/css" rel="stylesheet" />
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/kendo.all.min.js" type="text/javascript"></script>
+        <script src="js/peaxy.util.js" type="text/javascript"></script>
+        <script src="js/peaxy.oob.js" type="text/javascript"></script>
+        <script src="js/peaxy.userauthentication.js" type="text/javascript"></script>
+        <script src="js/peaxy.accountmodule.js" type="text/javascript"></script>
+        <script src="js/peaxy.app.js" type="text/javascript"></script>
+        <script src="js/peaxy.configinterface.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+                peaxy.ConfigInterface.getMessage('2',function(){});
+                peaxy.ConfigInterface.setDns({'search1':'192.168.3.1','search2':'192.168.3.2','search3':'192.168.3.3','server1':'192.168.3.250','server2':'192.168.3.251','server3':'192.168.3.252'},function(){});
+                peaxy.ConfigInterface.getDns(function(){});
+                peaxy.ConfigInterface.setEmail({'emailProtocol':'pop3','emailServer':'192.168.3.2','emailPort':'110','emailLogin':'admin@peaxy.com','emailPassword':'admin888','emailFrom':'admin@peaxy.com'},function(){});
+                peaxy.ConfigInterface.getEmail(function(){});
+                peaxy.ConfigInterface.setHs({'cardinality':'5','spareCount':'0','replacementEnabled':'false'},function(){});
+                peaxy.ConfigInterface.getHs(function(){});
+                peaxy.ConfigInterface.setLog({'server':'192.168.3.9','port':'25','filterList':[{'includes':'inc,lib','syslogEnable':'true'},{'includes':'float,int','syslogEnable':'false'}]},function(){});
+                peaxy.ConfigInterface.getLog(function(){});
+                peaxy.ConfigInterface.setNtp({'timeZone':'GMT +8','ntpServer1':'192.168.3.9','ntpServer2':'192.168.3.10','ntpServer3':'192.168.3.11'},function(){});
+                peaxy.ConfigInterface.getNtp(function(){});
+                peaxy.ConfigInterface.setStats({'statsServerIp':'192.168.3.9','statsServerPort':'134','interval':'15','enabledStats':['Enable','Disable']},function(){});
+                peaxy.ConfigInterface.getStats(function(){});
+                peaxy.ConfigInterface.setKv({'key':'key1','value':'value1'},function(){});
+                peaxy.ConfigInterface.getKv('key1',function(){});
+                
+            });
+		</script>
+		<title>hello, the wrold</title>
+	</head>
+	<body>
+
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Sets the global Hyperserver configuration." name="set global hyperserver configuration" 
+         method="POST" endpoint="peaxy/conf/hs/set" persistence="true" storageName="conf_hs" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandHS">
+	<output>
+		<successful type="json">successful</successful>
+		<failed type="text">failed</failed>
+	</output>
+	<parameters>
+		<parameter name="cardinality"/>
+		<parameter name="spare_count"/>
+		<parameter name="member_replacement"/>
+	</parameters>
+</command>

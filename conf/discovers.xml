@@ -1,0 +1,45 @@
+
+	<node class="net.peaxy.simulator.entity.domain.DiscoverInfo">
+		<leaf name="hostname">server1</leaf>
+		<leaf name="id" property="ID"></leaf>
+		<leaf name="manufacturer">HP</leaf>
+		<leaf name="product">SD</leaf>
+		<leaf name="serial_number">abcdef</leaf>
+		<leaf name="memory">112</leaf>
+		<leaf name="ip_count">23</leaf>
+		<array name="disk_list">
+			<node class="net.peaxy.simulator.entity.domain.DiskInfo">
+				<leaf name="name">C</leaf>
+				<leaf name="size">23</leaf>
+			</node>
+			<node class="net.peaxy.simulator.entity.domain.DiskInfo">
+				<leaf name="name">D</leaf>
+				<leaf name="size">34</leaf>
+			</node>
+			<node class="net.peaxy.simulator.entity.domain.DiskInfo">
+				<leaf name="name">E</leaf>
+				<leaf name="size">345</leaf>
+			</node>
+		</array>
+		<array name="interface_list">
+			<node class="net.peaxy.simulator.entity.domain.InterfaceInfo">
+				<leaf name="interface_name">Local</leaf>
+				<leaf name="speed">12</leaf>
+				<leaf name="is_active">true</leaf>
+				<leaf name="is_bonded">true</leaf>
+			</node>
+			<node class="net.peaxy.simulator.entity.domain.InterfaceInfo">
+				<leaf name="interface_name">Wireless</leaf>
+				<leaf name="speed">54</leaf>
+				<leaf name="is_active">true</leaf>
+				<leaf name="is_bonded">true</leaf>
+			</node>
+			<node class="net.peaxy.simulator.entity.domain.InterfaceInfo">
+				<leaf name="interface_name">Real</leaf>
+				<leaf name="speed">1000</leaf>
+				<leaf name="is_active">true</leaf>
+				<leaf name="is_bonded">true</leaf>
+			</node>
+		</array>
+	   <leaf name="ip_count">23</leaf>
+	</node>	

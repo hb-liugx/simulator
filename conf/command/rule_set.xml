@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Sets a configuration rule." name="set configuration rule" 
+         method="PUT" endpoint="conf/rule/set" persistence="true" storageName="rule_conf" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandRule">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+    <parameters>
+        <parameter name="id"/>
+        <parameter name="name"/>
+        <parameter name="group_id"/>
+        <parameter name="prefix"/>
+        <parameter name="suffix"/>
+        <parameter name="recursive"/>
+        <parameter name="sc_id"/>
+        <parameter name="RuleFlag"/>        
+    </parameters>
+</command>

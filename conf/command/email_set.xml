@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Sets the email configuration used by Hyperserver administrators." name="set email configuration" 
+         method="POST" endpoint="peaxy/conf/email/set" persistence="true" storageName="conf_email" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandEmail">
+	<output>
+		<successful type="json">successful</successful>
+		<failed type="text">failed</failed>
+	</output>
+	<parameters>
+		<parameter name="login"/>
+		<parameter name="protocol"/>
+		<parameter name="server"/>
+		<parameter name="port"/>
+		<parameter name="password"/>
+		<parameter name="from"/>
+	</parameters>
+</command>

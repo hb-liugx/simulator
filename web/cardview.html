@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)file:///F:/All%20project/PEAXY/kendoui.trial.2012.3.1315/examples/dataviz/bubble-charts/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Basic usage</title>
+	<style type="text/css">
+</style>
+    <link href="css/kendo.common.min.css" rel="stylesheet">
+    <link href="css/kendo.default.min.css" rel="stylesheet">
+	<link href="css/peaxy.card.css" rel="stylesheet">
+	<link href="css/peaxy.cardview.css" rel="stylesheet">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/kendo.all.min.js" type="text/javascript"></script>
+	<script src="js/cardview.js"></script>
+	<script src="js/card.js"></script>
+	<script src="js/peaxy.cardview.js"></script>
+	<script src="js/peaxy.card.js"></script>
+	
+
+</head>
+<body>
+<div id="cardView"></div>
+<div id="cardView1" style="float: left;margin-left:100px"></div>
+<button type="button" id = "btn1">Awaken All</button>
+</body>
+<script>
+var cardViewData = {
+	hyperfilerName:'HYPERFILER 1',
+	totalSpace:'500',
+	unallocated:'440',
+	allocated:'60',
+	encryption:'No',
+	storageClasses:{
+		namespaceCardData:{
+			ratio : "1:4",
+			redundancy : "1"
+		},
+		classes:[
+			{ 
+				className: "Class A",
+				statusName : "DEFAULT",
+				totalSpace : "60",
+				usableSpace: "15",
+				freeSpace : "60",
+				freeUsableSpace : "15",
+				usedSpace : "0",
+				usedUsableSpace : "0",
+				replicas : "3",
+				performance: "10",
+				flexible : "YES"
+			},
+			{ 
+				className: "Class B",
+				statusName : "",
+				totalSpace : "60",
+				usableSpace: "15",
+				freeSpace : "60",
+				freeUsableSpace : "15",
+				usedSpace : "0",
+				usedUsableSpace : "0",
+				replicas : "3",
+				performance: "10",
+				flexible : "YES"
+			},
+			{ 
+				className: "Class C",
+				statusName : "",
+				totalSpace : "60",
+				usableSpace: "15",
+				freeSpace : "60",
+				freeUsableSpace : "15",
+				usedSpace : "0",
+				usedUsableSpace : "0",
+				replicas : "3",
+				performance: "10",
+				flexible : "YES"
+			},
+			{ 
+				className: "Class C",
+				statusName : "",
+				totalSpace : "60",
+				usableSpace: "15",
+				freeSpace : "60",
+				freeUsableSpace : "15",
+				usedSpace : "0",
+				usedUsableSpace : "0",
+				replicas : "3",
+				performance: "10",
+				flexible : "YES"
+			},
+			{ 
+				className: "Class C",
+				statusName : "",
+				totalSpace : "60",
+				usableSpace: "15",
+				freeSpace : "60",
+				freeUsableSpace : "15",
+				usedSpace : "0",
+				usedUsableSpace : "0",
+				replicas : "3",
+				performance: "10",
+				flexible : "YES"
+			}
+		]
+	}
+};
+var cardView = new peaxy.CardView({
+	parent:$("#cardView")
+});
+cardView.setData(cardViewData);
+cardView.draw();
+
+
+$('#btn1').click(function(){
+	cardView.awakenAll();
+});
+</script>
+
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Peaxy Simulator" default="Build" basedir=".">
+    <property name="srcDir" location="src" />
+    <property name="outputDir" location="ant" />
+    <property name="package" value="net.peaxy.simulator" />
+    <property name="mainClass" value="net.peaxy.simulator.Simulator" />
+	<path id="project.class.path">
+		<fileset dir="${outputDir}/lib">
+           <include name="**/*.jar"/>
+        </fileset>
+		<pathelement path="${outputDir}/bin"/>
+	</path>
+<target name="Init">
+	<delete dir="${outputDir}" />
+	<delete dir="${outputDir}/conf" />
+    <mkdir dir="${outputDir}/bin" />
+	<mkdir dir="${outputDir}/lib" />
+	<mkdir dir="${outputDir}/conf" />
+	<mkdir dir="${outputDir}/data" />
+    <mkdir dir="${outputDir}/log" />
+    <mkdir dir="${outputDir}/simulator" />
+	<mkdir dir="${outputDir}/web" />
+	<copy todir="${outputDir}/bin/META-INF/services">
+       <fileset dir="${srcDir}/META-INF/services">
+         <include name="*.*" />
+        </fileset>
+    </copy>
+    <copy todir="${outputDir}/lib">
+	   <fileset dir="${basedir}/lib">
+	     <include name="*.jar" />
+	    </fileset>
+	</copy>
+	<copy todir="${outputDir}/conf">
+       <fileset dir="${basedir}/conf">
+         <include name="*.conf" />
+        </fileset>
+		<fileset dir="${basedir}/conf">
+         <include name="*.xml" />
+        </fileset>
+    </copy>
+	<copy todir="${outputDir}">
+       <fileset dir="${basedir}">
+         <include name="simulator.cmd" />
+        </fileset>
+    </copy>
+</target>
+<target name="Compile" depends="Init">
+    <javac srcdir="${srcDir}" destdir="${outputDir}/bin">
+    	<classpath refid="project.class.path"/>
+    </javac>
+	<copy todir="${outputDir}/bin/net/peaxy/simulator/resource/material">
+       <fileset dir="${srcDir}/net/peaxy/simulator/resource/material">
+         <include name="*.*" />
+        </fileset>
+    </copy>
+	<copydir src="${basedir}/web"
+	         dest="${basedir}/ant/web"/>
+</target>
+<target name="Build" depends="Init,Compile">
+</target>
+<target name="Run" depends="Build">
+	<exec executable="cmd">
+	    <arg value="/c"/>
+	    <arg value="${outputDir}/simulator.cmd"/>
+	  </exec>
+</target>
+
+</project>

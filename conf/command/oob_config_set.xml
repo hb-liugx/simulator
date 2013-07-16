@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Sets and commits the system configuration as part of the initial setup or later configuration changes." name="set and commit hyperserver configuration" 
+         method="PUT" endpoint="peaxy/oob/config/set" persistence="false" storageName="oob_config" class="">
+    <output>
+        <successful type="text">true</successful>
+        <failed type="text">false</failed>
+    </output>
+</command>

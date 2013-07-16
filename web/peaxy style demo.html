@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+	<link href="css/kendo.common.min.css" type="text/css" rel="stylesheet">
+	<link href="css/kendo.peaxy.min.css" type="text/css" rel="stylesheet">
+	<!-- <link href="css/new_styles.css" type="text/css" rel="stylesheet"> -->
+  <link href="css/peaxy.style.css" type="text/css" rel="stylesheet">
+</head>
+<body style="overflow:auto;">
+<div class='p-content' style="width:800px;background:LightGray;">
+	<div style="width:100%;height:100%;background:white;">
+    	<p class="p-title1">CREATING YOUR HYPERFILER</p>
+        <hr class='p-hr-l'/>
+        <p class="p-title2">NAMESPACE</p>
+        <hr class='p-hr-s'/>
+        <span class="p-desc">In the next screens, we'll ask you about your storage management needs,
+            and based on your answers, create a Peaxy Hyperfiler that meets your needs.
+            For a primer, watch the video below, otherwise click the "Get Started"
+            button to begin the setup process.
+        </span>
+        <span class="p-title4">p-title4</span><input type="text" placeholder="placeholder" class="p-input p-saved-color" value=" p-saved-color" /> 
+    <div>
+      <h2>.p-title-header</h2>
+      <p class="p-title-header" style="background:yellow;">ADVANCED SETTINGS <<--p-title-header</p>
+      <h2>.p-hr-style</h2>
+      class="p-hr-l"
+      <hr class="p-hr-l" style="background:yellow;"/>
+      class="p-hr-blank"
+      <hr class="p-hr-blank" style="background:blue;"/>
+      class="p-hr-s"
+      <hr class="p-hr-s" style="background:gray;"/>
+    <div>
+        <h2>Buttons</h2>
+      <button class="s-button">standard-button</button>
+      <button class="alarm-button">alarm-button</button>
+      <button class="save-button">save-button</button>
+      <button class="cta-button" disabled>cta-button</button>
+      <button class="cta-button">c</button>
+    </div>
+   <div>
+   <h2>Checkboxes</h2>
+    <input checked="checked" id="checkbox-1" type="checkbox"><label for="checkbox-1">unchecked checkbox</label>            
+    <input id="checkbox-2" checked="checked" type="checkbox"><label for="checkbox-2">checked checkbox</label>            
+    <input id="checkbox-3" disabled="disabled" type="checkbox"><label for="checkbox-3">disabled unchecked checkbox</label>            
+    <input id="checkbox-4" disabled="disabled" checked="checked" type="checkbox"><label for="checkbox-4">disabled checked checkbox</label>
+    <input id="checkbox-5" checked="checked" type="checkbox"><label for="checkbox-5"></label>
+    <h2>Radios</h2>
+    <input name="radio-group-1" id="radio-1" checked="checked" type="radio"><label for="radio-1">option one</label>
+    <input name="radio-group-1" id="radio-2" type="radio"><label for="radio-2">option two</label>                
+    <input name="radio-group-1" id="radio-3" type="radio"><label for="radio-3">option three</label>
+    <h2> Input text</h2>
+    <p class="p-title3" style="width:50%">
+    	PERFORMANCE LEVEL
+    	<span class ="p-label" style="float:right">input text</span>
+		<input type="text" placeholder="placeholder" class="p-input" style="width:100%" />     
+    </p>
+    <br/>
+    <p class ="p-title2" style="background:Grey;">PERFORMANCE LEVEL<span class="help"></p>
+    <span class="p-desc">What replication factor do you need? </span>
+     <input type="text" placeholder="placeholder" class="p-input" style="width:30%;" />     
+   </div>
+   
+   	<h2> NumericTextBox </h2>
+		<input id="numeric" type="number" value="17" min="0" max="100" step="1"/>
+   
+    <h2>DropdownList</h2>
+     <input id="color" value="1" />     
+ 	<h2> shadow </h2>  
+    <div class="p-shadow" style="margin:10px;width:300px;height:50px;"></div>
+   	<h2> kinds of background-color and color </h2> 
+   	<input type="text" placeholder="placeholder" class="p-input p-error-color" value=" p-error-color" />
+    	<input type="text" placeholder="placeholder" class="p-input p-saved-color" value=" p-saved-color" /> 
+     <span class="p-desc p-error-color"> p-error-color </span>
+     <span class="p-desc p-saved-color"> p-saved-color</span>
+     <button class="s-button p-saved">save-button</button>
+      <button class="alarm-button p-deleted">delete-button</button>
+    </div>
+    <h2>p-footer</h2>
+    <h2>p-level-icons</h2>
+    <div>
+     <div class="p-level-0"></div>
+      <span class="p-level-icons p-level-1"></span>
+      <span class="p-level-icons p-level-2"></span>
+      <span class="p-level-icons p-level-3"></span>
+      <span class="p-level-icons p-level-4"></span>
+      <span class="p-level-icons p-level-5"></span>
+      <span class="p-level-icons p-level-6"></span>
+      <span class="p-level-icons p-level-7"></span>
+      <span class="p-level-icons p-level-8"></span>
+      <span class="p-level-icons p-level-9"></span>
+      <span class="p-level-icons p-level-10"></span>
+      <span class="p-level-icons p-level-11"></span>
+      <span class="p-level-icons p-level-12"></span>
+      <span class="p-level-icons p-level-13"></span>
+      <span class="p-level-icons p-level-14"></span>
+      <span class="p-level-icons p-level-15"></span>
+      <span class="p-level-icons p-level-16"></span>
+    </div>
+
+    <h2>peaxy.switchbutton</h2>
+    <input id="switchbutton" type="checkbox"/>
+
+    <h2>peaxy.popupMsg </h2>
+    <button id="popbuton">peaxy.popupMsg autoHide:true</button><button id="popbutonfalse">peaxy.popupMsg autoHide: false</button>
+    <div id="popup" style="width:500px;height:80px;background:grey;"></div>
+   
+    <h2> repeater background</h2>
+    <div class="p-grey-repeater" style="width:300px;height:60px;">class="p-grey-repeater"</div>
+    <div class="p-blue-repeater" style="width:300px;height:60px;">class="p-blue-repeater"</div>
+    <div class="p-fill-DarkSlate" style="width:300px;height:60px;">class="p-fill-DarkSlate"</div>
+    <div class="p-fill-Wheat" style="width:300px;height:60px;">class="p-fill-Wheat"</div>
+    <h2> popup message background color</h2>
+    <div class="p-def-bg" style="width:300px;height:50px;">class="p-def-bg"</div>
+    <div class="p-error-bg" style="width:300px;height:50px;">class="p-error-bg"</div>
+    <div class="p-saved-bg" style="width:300px;height:50px;">class="p-saved-bg"</div>
+    <h2>class="p-spinner"</h2>
+    <p class="p-spinner"></p>
+
+    <h2>peaxy.tooltipDialog</h2>
+    <button id="td1" class="p-saved-bg" style="width:100%;height:30px;">peaxy.tooltipDialog1</button>
+    <button id="td2" class="p-saved-bg" style="width:100%;height:30px;">peaxy.tooltipDialog2</button>
+    <button id="td3" class="p-saved-bg" style="width:100%;height:30px;">peaxy.tooltipDialog3</button>
+    <button id="td4" class="p-saved-bg" style="width:100%;height:30px;">peaxy.tooltipDialog4</button>
+    <h2> .P-textbox </h2>   
+    <textarea class="p-textbox"> hello world.</textarea>
+    <h2> peaxy icons </h2>
+    <p class="p-title2">所有 icon 名称 在 Peaxy_UI_UI_Kit_042413.pdf 中 可找到</p>
+    <div style="width:100%;height:300px;">
+    <p class="p-title3"> class="p-secondary-icons p-si-Add"  / class="p-secondary-icons p-si-Remove"</p>
+    <span class="p-secondary-icons p-si-Add" style="background-color:gray;"></span>
+    <span class="p-secondary-icons p-si-Remove" style="background-color:gray;"></span>
+    <p class="p-title3">class="p-primary-icons p-i-Logo"</p>
+    <span class="p-primary-icons p-i-Logo" style="background-color:gray;"></span>
+    <span class="p-secondary-icons p-si-Confirm-Success" style="background-color:gray;"></span>
+    <span class="p-secondary-icons p-si-Calender" style="background-color:gray;"></span>
+    <span class="p-secondary-icons p-si-Notice" style="background-color:gray;"></span>
+    <span class="p-secondary-icons p-si-Stop" style="background-color:gray;"></span>
+    <span class="p-primary-icons p-i-Notifications" style="background-color:gray;" disabled="disabled"></span>
+    </div>
+</div>
+</body>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/kendo.all.min.js" type="text/javascript"></script>
+<script src="js/peaxy.util.js" type="text/javascript"></script>
+<script src="js/peaxy.switchbutton.js" type="text/javascript"></script>
+<script src="js/peaxy.slidein.js" type="text/javascript"></script>
+<script>
+var peaxy = peaxy || {};
+peaxy.Communication=(function(eventservice){
+  /*
+  var messageHandlers = [],w;
+    var wsURLs = ['',''];
+    if(typeof(w) == "undefined"){
+      w=new Worker("js/peaxy.workers.js");
+      w.onmessage = function(event){
+        for(var i=0,l=messageHandlers.length;i<l;i++){
+            messageHandlers[i](event.data);
+        }
+      }
+    }
+    */
+    var hf_token = '';
+    function ajaxRequest(method, url, data, callback, type){
+    if(jQuery.isFunction(data)){
+      type = type || callback;
+      callback = data;
+      data = undefined;
+    }
+    return jQuery.ajax({
+      url: url,
+      type: method,
+      contentType:'application/json',
+      dataType: type || 'text',
+      data: data,
+      headers:{'hf-token':hf_token},
+      error:function(xhr,textStatus,errorThrown){
+        if($.isFunction(callback)) callback(xhr.responseText, xhr.status);
+      },
+      success:function(data,textStatus,xhr){
+        if($.isFunction(callback)) callback(data, xhr.status);
+      }
+    });
+    };
+    return {
+        get:function(url, data, callback, type){
+            return ajaxRequest('get',url, data, callback, type);
+        },
+        post:function(url, data, callback, type){
+            return ajaxRequest('post',url, data, callback, type);
+        },
+        put:function(url, data, callback, type){
+            return ajaxRequest('put',url, data, callback, type);
+        },
+        del:function(url, data, callback, type){
+            return ajaxRequest('delete',url, data, callback, type);
+        },
+        getScript:function(url,handler){
+          return this.get(url, handler,'script')
+        },
+        getCSS:function(cssUrl){
+      var link = $('<link />');
+      link.attr('rel','stylesheet')
+        .attr('type','text/css')
+        .attr('href',cssUrl).appendTo($('head'));
+        },
+        registerListener:function(Listener){
+            messageHandlers.push(Listener);
+        },
+        setHFToken:function(hftoken){
+      hf_token = hftoken;
+      $.ajaxSetup({
+        headers:{'hf-token':hf_token}
+      });
+        },
+        submitForm:function(uri, formdata, options){
+          if(options){
+            $.extend(options.headers, {'hf-token':'hf_token'});
+          }
+          var opt = {
+            headers:{},
+            onProgress:function(data, httpCode){},
+            onSuccess:function(data, httpCode){}
+          };
+            opt = $.extend(opt,options || {});
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", uri, true);
+            /* set header */
+            for(var header in opt.headers){
+              xhr.setRequestHeader(header, opt.headers[header]);
+            }
+            xhr.onreadystatechange = function(){
+                if (xhr.readyState == 4){
+          opt.onSuccess(xhr.responseText, xhr.status);
+                }
+            };
+            xhr.upload.addEventListener("progress", function(e) {
+        opt.onProgress(e);
+      });
+            xhr.send(formdata);
+        }
+    };
+}());
+</script>
+<script>
+  $(function(){
+  	$("#numeric").kendoNumericTextBox();
+
+  	// create DropDownList from input HTML element
+  	var data = [
+  		{ text: "Black", value: "1" },
+  		{ text: "Orange", value: "2" },
+  		{ text: "Grey", value: "3" }
+  	];  	
+  	$("#color").kendoDropDownList({
+  		dataTextField: "text",
+  		dataValueField: "value",
+  		dataSource: data,
+  		index: 0,
+  		change: onChange
+  	});
+  	var dropdownlist = $("#color").data("kendoDropDownList");
+  	//dropdownlist.readonly();
+  	
+  	function onChange() {
+  		var value = $("#color").val();
+  		$("#cap")
+  			.toggleClass("black-cap", value == 1)
+  			.toggleClass("orange-cap", value == 2)
+  			.toggleClass("grey-cap", value == 3);
+  	};
+
+    $('#switchbutton').kendoPeaxySwitch();
+    $('#switchbutton').click(function(){
+      console.log($('#switchbutton').prop('checked'));
+    });
+
+    /*peaxy.popupMsg*/
+    $('#popbuton').click(function(){
+      peaxy.popupMsg("hello world autoHide true",{
+        parent:$('#popup'),
+        autoHide:true
+      });
+    });
+    $('#popbutonfalse').click(function(){
+      peaxy.popupMsg("hello world autoHide false",{
+        parent:$('#popup'),
+        autoHide:false
+      });
+    });
+
+    /* peaxy.tooltipDialog demo code*/
+    $('#td1').click(function(e){
+          var tooptip = peaxy.tooltipDialog($(e.target),{
+            content:'Would you like Peaxy to create a data migration\
+              workow for you?\
+              Lowering the storage space of an existing\
+              storage class requires the migration of data\
+              before the storage space can be used by the\
+              rest of the Hyperler. If you choose to create\
+              this workow you will nd it in your workows\
+              panel. You will need to manually initiate the\
+              workow.',
+              actions:[
+                {name:'No',action:function(){alert('No')}},
+                {name:'Yes',action:function(){alert('Yes')}}
+              ]
+            });     
+          console.log(tooptip.content.html());
+     });
+  $('#td2').click(function(e){
+            peaxy.tooltipDialog($(e.target),{
+              content:'Are you sure you want to nalize these changes to Hyperler 1?',
+              contentCSS:{'background-color':'#EF354F','color':'white'},
+                actions:[
+                  {name:'No',action:function(){alert('No')}},
+                  {name:'Yes',action:function(){alert('Yes')},class:'alarm-button'}
+                ]
+              });      
+       });
+
+  $('#td3').click(function(e){
+    var html = $('<div style="padding:10px;color:black;"><p>Are you sure you want to nalize these changes to Hyperfler 1?</p>\
+                    <select><option>adfadfadfadf</option>\
+                    <option>adfadfadf</option>\
+                    <option>yuetyutyerty</option><option></option>\
+                    </select></div>');
+            peaxy.tooltipDialog($(e.target),{
+              content:html,
+                actions:[
+                  {name:'No',action:function(){alert('No')}},
+                  {name:'Yes',action:function(){alert('Yes')}}
+                ]
+              });      
+       });
+  $('#td4').click(function(e){
+    var html = $('<div style="padding:10px;" class="p-error-bg">\
+      <p>Are you sure you want to nalize these changes to Hyperfler 1?</p>\
+        <div id="calendar"></div>\
+        <select><option>adfadfadfadf</option>\
+        <option>adfadfadf</option>\
+        <option>yuetyutyerty</option><option></option>\
+        </select></div>');
+    
+        html.find('select').kendoDropDownList();
+        html.find('#calendar').kendoCalendar();
+
+        peaxy.tooltipDialog($(e.target),{
+              content:html
+            });      
+       });
+/*end document ready */  
+  });
+</script>
+</html>

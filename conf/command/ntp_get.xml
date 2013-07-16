@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Gets the NTP configuration for the Hyperserver." name="get NTP configuration" 
+         method="GET" endpoint="peaxy/conf/ntp/get" persistence="false" storageName="conf_ntp" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandNTP">
+	<output>
+		<successful type="json">successful</successful>
+		<failed type="text">failed</failed>
+	</output>
+</command>

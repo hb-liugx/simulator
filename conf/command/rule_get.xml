@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Returns all currently configured ingest policies." name="Get rule" 
+         method="GET" endpoint="conf/rule/get" persistence="true" storageName="rule_conf" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandRule">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+</command>

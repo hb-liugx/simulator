@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Generate a peaxy management tool license" name="generate license" 
+         method="GET" endpoint="license/generate" persistence="true" storageName="license" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandImportLicense">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+</command>

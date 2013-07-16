@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command_list [
+	<!ELEMENT command_list (command)*>
+	<!ELEMENT command EMPTY>
+	<!ATTLIST command endpoint CDATA #REQUIRED
+	                  method (GET | SET | PUT | DELETE | POST ) "GET"
+	                  file CDATA #REQUIRED>
+]>
+<command_list>
+    <command method="POST" endpoint="aaa/user/login" file="conf/command/user_login.xml"/>
+    <command method="PUT"  endpoint="aaa/user/create" file="conf/command/user_create.xml"/>
+    <command method="POST" endpoint="aaa/user/updatepwd" file="conf/command/user_update.xml"/>
+    
+    <command method="GET" endpoint="aaa/adminaddress" file="conf/command/adminemail_get.xml"/>    
+    <command method="POST" endpoint="aaa/setadminaddress" file="conf/command/adminemail_set.xml"/>
+    
+    <command method="GET" endpoint="peaxy/oob/completion" file="conf/command/oob_completion.xml"/>
+    <command method="GET" endpoint="peaxy/oob/config/get" file="conf/command/oob_config_get.xml"/>
+    <command method="GET" endpoint="peaxy/oob/config/set" file="conf/command/oob_config_set.xml"/>
+    <command method="GET" endpoint="peaxy/oob/state/get" file="conf/command/oob_state_get.xml"/>
+    
+    <command method="GET" endpoint="peaxy/cluster/service/state/get" file="conf/command/cluster_state_get.xml"/>
+    <command method="GET" endpoint="peaxy/cluster/view/get" file="conf/command/cluster_view_get.xml"/>
+    <command method="GET" endpoint="peaxy/cluster/restart" file="conf/command/cluster_restart.xml"/>
+    
+	<command method="GET" endpoint="peaxy/conf/dns/get" file="conf/command/dns_get.xml"/>
+	<command method="POST" endpoint="peaxy/conf/dns/set" file="conf/command/dns_set.xml"/>
+	
+	<command method="GET" endpoint="peaxy/conf/email/get" file="conf/command/email_get.xml"/>
+	<command method="POST" endpoint="peaxy/conf/email/set" file="conf/command/email_set.xml"/>
+	
+	<command method="GET" endpoint="peaxy/conf/hs/get" file="conf/command/hs_get.xml"/>
+	<command method="POST" endpoint="peaxy/conf/hs/set" file="conf/command/hs_set.xml"/>
+	
+	<command method="GET" endpoint="peaxy/conf/log/get" file="conf/command/log_get.xml"/>
+    <command method="POST" endpoint="peaxy/conf/log/set" file="conf/command/log_set.xml"/>
+    
+    <command method="GET" endpoint="peaxy/conf/ntp/get" file="conf/command/ntp_get.xml"/>
+    <command method="POST" endpoint="peaxy/conf/ntp/set" file="conf/command/ntp_set.xml"/>
+    
+    <command method="GET" endpoint="peaxy/conf/stats/get" file="conf/command/stats_get.xml"/>
+    <command method="POST" endpoint="peaxy/conf/stats/set" file="conf/command/stats_set.xml"/>
+    
+    <command method="PUT" endpoint="conf/rule/create" file="conf/command/rule_create.xml"/>
+    <command method="GET" endpoint="conf/rule/get" file="conf/command/rule_get.xml"/>
+    <command method="PUT" endpoint="conf/rule/set" file="conf/command/rule_set.xml"/>
+    <command method="DELETE" endpoint="conf/rule/delete" file="conf/command/rule_delete.xml"/>
+    <command method="PUT" endpoint="conf/rule/getfilter" file="conf/command/rule_getfilter.xml"/>
+    
+    <command method="POST" endpoint="conf/sc/create" file="conf/command/sc_create.xml"/>
+    <command method="GET" endpoint="conf/sc/get" file="conf/command/sc_get.xml"/>
+    <command method="PUT" endpoint="conf/sc/set" file="conf/command/sc_set.xml"/>
+    
+    <command method="POST" endpoint="license/import" file="conf/command/license_import.xml"/>
+    <command method="GET" endpoint="license/generate" file="conf/command/license_generate.xml"/>
+    
+    <command method="POST" endpoint="/bootstrap/discover" file="conf/command/bootstrap_discover.xml"/>
+    <command method="POST" endpoint="/bootstrap/beacon/set" file="conf/command/bootstrap_beacon_set.xml"/>
+    <command method="POST" endpoint="/bootstrap/os_install/start" file="conf/command/bootstrap_install_start.xml"/>
+    <command method="POST" endpoint="/bootstrap/os_install/progress" file="conf/command/bootstrap_install_progress.xml"/>
+    <command method="POST" endpoint="/bootstrap/os_install/cancel_all" file="conf/command/bootstrap_install_cancel_all.xml"/>
+</command_list>

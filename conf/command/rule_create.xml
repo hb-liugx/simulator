@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Creates new or modify existing ingest policies." name="create configuration rule" 
+         method="PUT" endpoint="conf/rule/create" persistence="true" storageName="rule_conf" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandRule">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+	<parameters>
+		<parameter name="parent_path"/>
+		<parameter name="recursive"/>
+		<parameter name="group_id"/>
+		<parameter name="file_type"/>
+		<parameter name="sc_id"/>
+		<parameter name="name"/>
+		<parameter name="id"/>
+	</parameters>
+</command>

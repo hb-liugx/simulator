@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<link href="/css/treeview.css" type="text/css" rel="stylesheet" />
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/kendo.all.min.js" type="text/javascript"></script>
+        <script src="js/peaxy.util.js" type="text/javascript"></script>
+        <script src="js/peaxy.oob.js" type="text/javascript"></script>
+        <script src="js/peaxy.userauthentication.js" type="text/javascript"></script>
+        <script src="js/peaxy.accountmodule.js" type="text/javascript"></script>
+        <script src="js/peaxy.app.js" type="text/javascript"></script>
+        <script src="js/peaxy.datamanagementinterface.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+				// peaxy.DataManagementInterface.getMigration();
+                // peaxy.DataManagementInterface.createMigrationPolicy([ {"policy":{"condition":{"currentSC":1,"dir":"/sc/dir/","extension":"condition:ext","unAccessedMinutes":342,"unModifiedMinutes":3432},"description":"policy:desc.","destination":24,"id":1,"name":"policy1"},"schedule":{"start":10,"interval":30}} ],function(data,code){});
+                // peaxy.DataManagementInterface.getPolicies(function(data,code){});
+                // peaxy.DataManagementInterface.getPolicies('migration',function(data,code){});
+                // peaxy.DataManagementInterface.getPolicies('ingest',function(data,code){});
+                // peaxy.DataManagementInterface.deletePolicy(function(data,code){});
+                /* peaxy.DataManagementInterface.createRuleConfig([ {"fileType":"exe","flag":"DEFAULT_RULE","groupId":"1","id":2,"name":"rule1","parentPath":"/src","recursive":false,"storageClassId":1,"storageClassName":"sc1","type":"RuleCfg","version":0} ],function(data,code){});
+                   peaxy.DataManagementInterface.setRuleConfig([ {"fileType":"exe","flag":"DEFAULT_RULE","groupId":2,"id":2,"name":"rule2","parentPath":"/src/web","recursive":true,"storageClassId":2,"storageClassName":"sc2","type":"RuleCfg","version":0} ],function(data,code){});
+                   peaxy.DataManagementInterface.deleteRule({"groupId":"2","scId":"2"},function(data,code){});
+                   peaxy.DataManagementInterface.getRuleConfig({"groupId":"2","scId":"2"},function(data,code){});
+                   peaxy.DataManagementInterface.getAllRuleConfig(function(data,code){});*/
+                // peaxy.DataManagementInterface.createSCConfig({"name":"sc1","description":"sc 1 desc","cardinality":"50","capacityGb":2048,"type":"MEDIUM","defaultSC":false}, function(data,code){});
+                // peaxy.DataManagementInterface.createSCConfig({"name":"sc2","description":"sc 2 desc","cardinality":"60","capacityGb":2048,"type":"MEDIUM","defaultSC":false}, function(data,code){});
+                // peaxy.DataManagementInterface.createSCConfig({"name":"sc3","description":"sc 3 desc","cardinality":"60","capacityGb":2048,"type":"MEDIUM","defaultSC":false}, function(data,code){});
+                 peaxy.DataManagementInterface.setSCConfig([{"id":1,"name":"update sc1","description":"update sc 1 desc","cardinality":"1","capacityGb":2048,"type":"MEDIUM","defaultSC":false}],function(data,code){});
+                 peaxy.DataManagementInterface.setSCConfig([{"id":2,"name":"update sc2","description":"update sc 2 desc","cardinality":"2","capacityGb":4096,"type":"MEDIUM","defaultSC":true}],function(data,code){});
+                 peaxy.DataManagementInterface.setSCConfig([{"id":3,"name":"update sc3","description":"update sc 3 desc","cardinality":"3","capacityGb":8192,"type":"MEDIUM","defaultSC":false}],function(data,code){});
+                // peaxy.DataManagementInterface.setSCConfig(function(data,code){});
+                // peaxy.DataManagementInterface.getSCConfig(function(data,code){});
+                // peaxy.DataManagementInterface.getStorageClassCapacity(function(data,code){});
+            });
+		</script>
+		<title>hello, the wrold</title>
+	</head>
+	<body>
+
+	</body>
+</html>

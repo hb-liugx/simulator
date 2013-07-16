@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Configures a new Storage Class within a Hyperfiler." name="set storage class" 
+         method="PUT" endpoint="conf/sc/set" persistence="true" storageName="sc_conf" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandSC">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+    <parameters>
+        <parameter name="id"/>
+        <parameter name="name"/>
+        <parameter name="description"/>
+        <parameter name="list"/>
+        <parameter name="cardinality"/>
+        <parameter name="capacity"/>
+        <parameter name="device_type"/>
+    </parameters>
+</command>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "../command.dtd">
+
+<command description="Gets the current statistics that are collected for the Hyperserver." name="get statistics configuration" 
+         method="GET" endpoint="peaxy/conf/stats/get" persistence="false" storageName="stats_conf" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandStats">
+	<output>
+		<successful type="json">successful</successful>
+		<failed type="text">failed</failed>
+	</output>
+	<parameters>
+        <parameter name="interval"/>
+        <parameter name="server_ip"/>
+        <parameter name="server_port"/>
+        <parameter name="enabled_stats"/>
+    </parameters>
+</command>

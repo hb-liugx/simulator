@@ -1,0 +1,184 @@
+.peaxy-video-icon{
+	background:url(../img/video_icons_sprite.png) no-repeat 0 0;
+	width:24px;
+	height:24px;
+}
+.peaxy-i-video-restore{
+	background-position: -60px -32px !important;
+}
+.peaxy-i-video-restore:hover{
+	background-position: -88px -32px !important;
+}
+/* video container */
+.videoContainer {
+	width:600px;
+	height:288px;
+	position:relative;
+	/*overflow:hidden;*/
+	margin: 0 auto;
+	background:#000;
+	color:#ccc;
+	-webkit-box-shadow: 0 4px 23px 5px rgba(128, 128, 128, 0.3);
+	//box-shadow: 1px 1px 7px 1px rgba(128, 128, 128, 0.3);
+	box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+/*** VIDEO CONTROLS CSS ***/
+/* control holder */
+.videoContainer .control{
+	background:white;
+	color:#ccc;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	z-index:5;
+	display:none;
+}
+/* control top part */
+.videoContainer .topControl{
+	background:#1F1F1F; /* fallback */
+	background:-moz-linear-gradient(top,#242424 50%,#1F1F1F 50%,#171717 100%);
+	background:-webkit-linear-gradient(top,#242424 50%,#1F1F1F 50%,#171717 100%);
+	background:-o-linear-gradient(top,#242424 50%,#1F1F1F 50%,#171717 100%);
+}
+/* control bottom part */
+.videoContainer .btmControl{
+	clear:both;
+	padding-top:6px;
+	height:30px;
+	background:white; /* fallback */
+	line-height: 24px;
+	width:100%;
+}
+.videoContainer .control div.btn {
+	float:left;
+	width:24px;
+	height:24px;
+	margin:0 5px;
+	cursor:pointer;
+}
+.videoContainer .control div.text{
+	font-size:12px;
+	font-weight:bold;
+	line-height:30px;
+	text-align:center;
+	font-family:verdana;
+	width:20px;
+	border:none;
+	color:#777;
+}
+.videoContainer .control div.btnPlay{
+	background-position:-4px -4px;
+}
+.videoContainer .control div.btnPlay:hover{
+	background-position:-32px -4px;
+}
+.videoContainer .control div.paused{
+	background-position:-60px -4px;
+}
+.videoContainer .control div.paused:hover{
+	background-position:-88px -4px;
+}
+.videoContainer .control div.btnStop{
+	background-position:-60px -4px;
+}
+.videoContainer .control div.btnStop:hover{
+	background-position:-88px -4px;
+}
+.videoContainer .control div.spdText{
+	border:none;
+	font-size:14px;
+	line-height:30px;
+	font-style:italic;
+}
+.videoContainer .control div.selected{
+	font-size:15px;
+	color:#ccc;
+}
+.videoContainer .control div.sound{
+	background-position:-60px -60px;
+	border:none;
+	float:left;
+}
+.videoContainer .control div.sound:hover{
+	background-position:-88px -60px;
+	border:none;
+	float:left;
+}
+.videoContainer .control div.sound2{
+	background-position:-4px -60px !important;
+}
+.videoContainer .control div.sound2:hover{
+	background-position:-4px -60px !important;
+}
+.videoContainer .control div.muted{
+	background-position:-4px -88px !important;
+}
+.videoContainer .control div.muted:hover{
+	background-position:-32px -88px !important;
+}
+.videoContainer .control div.btnFS{
+	background-position:-4px -32px;
+	float:right;
+}
+.videoContainer .control div.btnFS:hover{
+	background-position:-32px -32px;
+	float:right;
+}
+
+/* PROGRESS BAR CSS */
+/* Progress bar */
+.videoContainer .progress {
+	width:100%;
+	height:10px;
+	position:relative;
+	float:left;
+	cursor:pointer;
+	background: #A2AAAD; /* fallback */
+}
+.videoContainer .progress span {
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+}
+.videoContainer .timeBar{
+	z-index:10;
+	width:0;
+	background: #08466E; /* fallback */
+}
+.videoContainer .bufferBar{
+	z-index:5;
+	width:0;
+	background: #DADDDF;
+}
+/* time and duration */
+.videoContainer .time{
+	width:25%;
+	float:left;
+	padding-top:4px;
+	color:#A2AAAD;
+}
+
+/* VOLUME BAR CSS */
+/* volume bar */
+.videoContainer .volume{
+	position:relative;
+	cursor:pointer;
+	width:100px;
+	height:10px;
+	float:left;
+	margin-top:8px;
+	margin-right:20px;
+	background: #C6CBCD;
+}
+.videoContainer .volumeBar{
+	display:block;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#08466E;
+	z-index:10;
+}

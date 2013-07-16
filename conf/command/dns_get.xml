@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "../command.dtd">
+
+<command description="Gets the current DNS configuration." name="get DNS configuration" 
+         method="GET" endpoint="peaxy/conf/dns/get" persistence="true" storageName="conf_dns" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandDNS">
+	<output>
+		<successful type="json" class="net.peaxy.simulator.entity.domain">successful</successful>
+		<failed type="text" httpcode="401">failed</failed>
+	</output>
+	<parameters>
+		<parameter isKey="true">id</parameter>
+	</parameters>
+</command>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="get oob completion" name="get oob completion"
+         method="GET" endpoint="peaxy/oob/completion" persistence="false" storageName="user" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandCompletion">
+    <output>
+        <successful type="text">true</successful>
+        <failed type="text">false</failed>
+    </output>
+</command>

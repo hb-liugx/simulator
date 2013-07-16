@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE user.management [
+	<!ENTITY hyperfilerconfiguration "HYPERFILER CONFIGURATION">
+	<!ELEMENT user.management (rights.predefined, roles, users)>
+	<!ELEMENT rights.predefined (rights)+>
+	<!ELEMENT rights (right)*>
+	<!ELEMENT right EMPTY>
+	<!ELEMENT roles (role)+>
+	<!ELEMENT role (rights)>
+	<!ATTLIST rights name CDATA #REQUIRED>
+	<!ATTLIST right
+		name CDATA #REQUIRED
+		view (T | F) "F"
+		edit (T | F) "F"
+	>
+	<!ATTLIST role name CDATA #REQUIRED>
+	<!ATTLIST role dd (a | d) "d">
+]>
+<user.management>
+	<rights.predefined>
+		<rights name="&hyperfilerconfiguration;">
+		</rights>
+		<rights name="MONITOR">
+		</rights>
+		<rights name="NOTIFICATIONS">
+		</rights>
+		<rights name="PEAXY ACCOUNT">
+		</rights>
+		<rights name="MANAGE USERS">
+			<right name="SELECT ALL"/>
+			<right name="DEFINE USER TYPES"/>
+			<right name="ADD USER"/>
+			<right name="ACTIVITY LOGS"/>
+		</rights>
+		<rights name="DIRECTORY ACCESS">
+		</rights>
+	</rights.predefined>
+	<roles>
+		<role name="">
+			<rights name="">
+				<right name=""/>
+			</rights>
+		</role>
+	</roles>
+	<users>
+		<user name="" passwd="">
+		</user>
+	</users>
+</user.management>

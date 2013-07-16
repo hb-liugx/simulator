@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="set admin email" name="set admin email" 
+         method="GET" endpoint="aaa/setadminaddress" persistence="true" storageName="admin_email" class="">
+    <output>
+        <successful type="text">successful</successful>
+        <failed type="text">failed</failed>
+    </output>
+    <parameters>
+        <parameter name="email"/>
+    </parameters>
+</command>

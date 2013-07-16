@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Creates a user account. The initial Administrator account is created during the setup. That user can create other administrator users as needed." 
+         name="create user" method="PUT" endpoint="aaa/user/create" persistence="true" storageName="user" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandCreateUser">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+	<parameters>
+		<parameter isKey="true" name="name"/>
+		<parameter name="password"/>
+		<parameter name="email"/>
+		<parameter name="role"/>
+	</parameters>
+</command>

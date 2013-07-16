@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+
+<command description="Returns one or more ingest policies that match the getfilter criteria." name="get filter for configuration rule" 
+         method="PUT" endpoint="conf/rule/getfilter" persistence="true" storageName="rule_conf" 
+         class="net.peaxy.simulator.entity.PredefinedRESTCommandRule">
+	<output>
+		<successful type="json">Success</successful>
+		<failed type="text">failure</failed>
+	</output>
+    <parameters>
+        <parameter name="id"/>
+        <parameter name="group_id"/>
+        <parameter name="parent_path"/>      
+    </parameters>
+</command>

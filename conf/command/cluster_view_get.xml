@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "conf/command.dtd">
+<command description="Gets a comprehensive view of the cluster." name="get cluster view" method="GET" 
+         endpoint="peaxy/cluster/view/get" persistence="false" storageName="" class="">
+    <output>
+        <successful type="text">admin@peaxy.net</successful>
+        <failed type="text">failed</failed>
+    </output>
+</command>
